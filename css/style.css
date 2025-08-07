@@ -1,208 +1,244 @@
+/* 
+  This CSS file defines the styles for your YouTube-style webpage.
+  CSS (Cascading Style Sheets) is used to control the look and formatting of a document written in HTML.
+*/
+
+/* Styles for the body element */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif; /* Sets the font to Roboto, with a fallback to any sans-serif font */
+    margin: 0; /* Removes default margin around the body */
+    background-color: #f9f9f9; /* Sets a light grey background color for the entire page */
 }
 
+/* Styles for the header section */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+    display: flex; /* Uses Flexbox for layout, allowing items to be arranged in a row or column */
+    justify-content: space-between; /* Distributes items evenly in the header, with space between them */
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 10px 20px; /* Adds padding around the header (top/bottom 10px, left/right 20px) */
+    background-color: white; /* Sets the background color of the header to white */
+    border-bottom: 1px solid #ddd; /* Adds a light grey border at the bottom of the header */
 }
 
+/* Styles for the left, center, and right sections within the header */
 .header__left, .header__center, .header__right {
-    display: flex;
-    align-items: center;
+    display: flex; /* Uses Flexbox for internal layout */
+    align-items: center; /* Aligns items vertically in the center */
 }
 
+/* Styles for general header icons */
 .header__icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
+    width: 24px; /* Sets the width of the icon */
+    height: 24px; /* Sets the height of the icon */
+    cursor: pointer; /* Changes the mouse cursor to a pointer when hovering over the icon, indicating it's clickable */
 }
 
+/* Styles for the YouTube logo in the header */
 .header__logo {
-    height: 20px;
-    margin-left: 20px;
+    height: 20px; /* Sets the height of the logo */
+    margin-left: 20px; /* Adds left margin to separate it from the menu icon */
 }
 
+/* Styles for the search bar input field */
 .header__search-bar {
-    width: 500px;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 40px 0 0 40px;
-    font-size: 16px;
+    width: 500px; /* Sets the width of the search bar */
+    padding: 8px 12px; /* Adds padding inside the search bar */
+    border: 1px solid #ccc; /* Adds a light grey border */
+    border-radius: 40px 0 0 40px; /* Rounds the left corners to create a pill shape */
+    font-size: 16px; /* Sets the font size of the text inside the search bar */
 }
 
+/* Styles for the search button */
 .header__search-button {
-    padding: 8px 20px;
-    border: 1px solid #ccc;
-    border-left: none;
-    border-radius: 0 40px 40px 0;
-    background-color: #f8f8f8;
-    cursor: pointer;
+    padding: 4px 20px; /* Adds padding inside the button */
+    border: 1px solid #ccc; /* Adds a light grey border */
+    border-left: none; /* Removes the left border to connect it visually with the search bar */
+    border-radius: 0 40px 40px 0; /* Rounds the right corners to complete the pill shape */
+    background-color: #f8f8f8; /* Sets a light grey background color */
+    cursor: pointer; /* Changes the mouse cursor to a pointer */
 }
 
+/* Styles for the right section of the header */
 .header__right {
-    gap: 20px;
+    gap: 20px; /* Adds space between the items in the right section */
 }
 
+/* Styles for the avatar icon in the header */
 .header__icon--avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
+    width: 32px; /* Sets the width of the avatar */
+    height: 32px; /* Sets the height of the avatar */
+    border-radius: 50%; /* Makes the avatar perfectly round */
 }
 
+/* Styles for the main content container */
 .main-container {
-    display: flex;
-    padding: 20px;
+    display: flex; /* Uses Flexbox for layout, arranging video section and sidebar side-by-side */
+    padding: 20px; /* Adds padding around the main content */
 }
 
+/* Styles for the main video section */
 .video-section {
-    flex-grow: 1;
-    margin-right: 20px;
+    flex-grow: 1; /* Allows the video section to take up available space */
+    margin-right: 20px; /* Adds right margin to separate it from the sidebar */
 }
 
+/* Styles for the video player container */
 .video-player {
-    margin-bottom: 16px;
+    margin-bottom: 16px; /* Adds bottom margin below the video player */
 }
 
+/* Styles for the video title */
 .video-section__title {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0 0 16px 0;
-    line-height: 1;
-    color: #000000;
+    font-size: 20px; /* Sets the font size of the video title */
+    font-weight: 600; /* Sets the font weight to semi-bold */
+    margin: 0 0 16px 0; /* Sets margins (top, right, bottom, left) */
+    line-height: 1; /* Sets the line height */
+    color: #000000; /* Sets the text color to black */
 }
 
+/* Styles for the sidebar */
 #sidebar {
-    width: 372px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    width: 372px; /* Sets a fixed width for the sidebar */
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Arranges items in a column */
+    gap: 16px; /* Adds space between video items in the sidebar */
 }
 
+/* Styles for individual video items in the sidebar */
 .video-item {
-    display: flex;
-    gap: 16px;
-    cursor: pointer;
+    display: flex; /* Uses Flexbox for layout */
+    gap: 16px; /* Adds space between the thumbnail and video info */
+    cursor: pointer; /* Changes the mouse cursor to a pointer */
 }
 
+/* Styles for video thumbnails in the sidebar */
 .thumbnail {
-    width: 160px;
-    height: 90px;
-    border-radius: 8px;
+    width: 160px; /* Sets the width of the thumbnail */
+    height: 90px; /* Sets the height of the thumbnail */
+    border-radius: 8px; /* Rounds the corners of the thumbnail */
 }
 
+/* Styles for the video information section in the sidebar */
 .video-info {
-    width: 196px;
+    width: 196px; /* Sets the width of the video information */
 }
 
+/* Styles for the video title in the sidebar */
 .video-title {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #0f0f0f;
-    margin: 0 0 4px 0;
-    max-height: 32px;
-    overflow: hidden;
+    font-weight: 600; /* Sets the font weight to semi-bold */
+    font-size: 14px; /* Sets the font size */
+    line-height: 1.2; /* Sets the line height */
+    color: #0f0f0f; /* Sets the text color */
+    margin: 0 0 4px 0; /* Sets margins */
+    max-height: 32px; /* Sets a maximum height for the title */
+    overflow: hidden; /* Hides any overflowing text */
 }
 
+/* Styles for the channel name and views in the sidebar */
 .video-channel, .video-views {
-    font-weight: 400;
-    font-size: 12px;
-    color: #606060;
-    margin: 0;
+    font-weight: 400; /* Sets the font weight to normal */
+    font-size: 12px; /* Sets the font size */
+    color: #606060; /* Sets a grey text color */
+    margin: 0; /* Removes default margins */
 }
 
+/* Styles for the actions section below the main video */
 .video-section__actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: space-between; /* Distributes items evenly with space between them */
+    align-items: center; /* Aligns items vertically in the center */
+    margin-bottom: 24px; /* Adds bottom margin */
 }
 
+/* Styles for the channel information section below the main video */
 .video-section__channel {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    display: flex; /* Uses Flexbox for layout */
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 12px; /* Adds space between channel avatar and info */
 }
 
+/* Styles for the channel avatar below the main video */
 .video-section__channel-avatar {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
+    width: 42px; /* Sets the width of the avatar */
+    height: 42px; /* Sets the height of the avatar */
+    border-radius: 50%; /* Makes the avatar perfectly round */
 }
 
+/* Styles for the channel name below the main video */
 .video-section__channel-name {
-    font-weight: 600;
-    font-size: 16px;
-    color: #0f0f0f;
-    margin: 0;
+    font-weight: 600; /* Sets the font weight to semi-bold */
+    font-size: 16px; /* Sets the font size */
+    color: #0f0f0f; /* Sets the text color */
+    margin: 0; /* Removes default margins */
 }
 
+/* Styles for the subscriber count below the main video */
 .video-section__channel-subscribers {
-    font-size: 12px;
-    color: #606060;
-    margin: 0;
+    font-size: 12px; /* Sets the font size */
+    color: #606060; /* Sets a grey text color */
+    margin: 0; /* Removes default margins */
 }
 
+/* Styles for the subscribe button */
 .video-section__subscribe-button {
-    background-color: #c00;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    padding: 10px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
+    background-color: #c00; /* Sets a red background color */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the border */
+    border-radius: 2px; /* Slightly rounds the corners */
+    padding: 10px 16px; /* Adds padding inside the button */
+    font-size: 14px; /* Sets the font size */
+    font-weight: 600; /* Sets the font weight to semi-bold */
+    text-transform: uppercase; /* Converts text to uppercase */
+    cursor: pointer; /* Changes the mouse cursor to a pointer */
 }
 
+/* Styles for the action buttons (like, dislike, share, download) */
 .video-section__buttons {
-    display: flex;
-    gap: 10px;
+    display: flex; /* Uses Flexbox for layout */
+    gap: 10px; /* Adds space between the buttons */
 }
 
+/* Styles for individual action buttons */
 .video-section__button {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
+    display: flex; /* Uses Flexbox for layout */
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 6px; /* Adds space between icon and text */
+    background-color: #f2f2f2; /* Sets a light grey background color */
+    border: none; /* Removes the border */
+    border-radius: 20px; /* Rounds the corners to create a pill shape */
+    padding: 8px 16px; /* Adds padding inside the button */
+    font-size: 14px; /* Sets the font size */
+    font-weight: 600; /* Sets the font weight to semi-bold */
+    cursor: pointer; /* Changes the mouse cursor to a pointer */
 }
 
+/* Styles for images within action buttons */
 .video-section__button img {
-    width: 24px;
-    height: 24px;
+    width: 24px; /* Sets the width of the icon */
+    height: 24px; /* Sets the height of the icon */
 }
 
+/* Styles for the details section below the main video */
 .video-section__details {
-    border-top: 1px solid #ddd;
-    padding-top: 16px;
-    margin-top: 16px;
+    border-top: 1px solid #ddd; /* Adds a light grey border at the top */
+    padding-top: 16px; /* Adds top padding */
+    margin-top: 16px; /* Adds top margin */
 }
 
+/* Styles for the views count in the details section */
 .video-section__views {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1;
-    color: #000000;
-    margin: 0 0 8px 0;
+    font-weight: 600; /* Sets the font weight to semi-bold */
+    font-size: 14px; /* Sets the font size */
+    line-height: 1; /* Sets the line height */
+    color: #000000; /* Sets the text color to black */
+    margin: 0 0 8px 0; /* Sets margins */
 }
 
+/* Styles for the video description */
 .video-section__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #000000;
-    max-width: 510px;
+    font-weight: 400; /* Sets the font weight to normal */
+    font-size: 14px; /* Sets the font size */
+    line-height: 1.4; /* Sets the line height */
+    color: #000000; /* Sets the text color to black */
+    max-width: 510px; /* Sets a maximum width for the description */
 }

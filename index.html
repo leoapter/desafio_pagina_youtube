@@ -1,49 +1,79 @@
+<!-- 
+  This is the main HTML document for your YouTube-style webpage.
+  HTML (HyperText Markup Language) is the standard language for creating web pages.
+-->
 <!DOCTYPE html>
+<!-- The DOCTYPE declaration defines the document type to be HTML5 -->
 <html lang="en">
+<!-- The <html> element is the root element of an HTML page. The "lang" attribute specifies the language of the document. -->
 <head>
+    <!-- The <head> element contains meta-information about the HTML document, such as title, links to stylesheets, and character set. -->
     <meta charset="UTF-8">
+    <!-- The <meta charset="UTF-8"> tag specifies the character encoding for the HTML document. UTF-8 is a universal character set that includes almost every character from all human languages. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The <meta name="viewport"> tag gives the browser instructions on how to control the page's dimensions and scaling. "width=device-width" sets the width of the page to follow the screen-width of the device. "initial-scale=1.0" sets the initial zoom level when the page is first loaded by the browser. -->
     <title>YouTube</title>
+    <!-- The <title> element specifies a title for the HTML document, which is shown in the browser's title bar or in the page's tab. -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- The <link> tag is used to link to external resources, in this case, your stylesheet. "rel" specifies the relationship between the current document and the linked document, and "href" specifies the URL of the linked resource. -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- This link imports the "Roboto" font from Google Fonts with different weights (400, 500, 700) to be used in your stylesheet. -->
 </head>
 <body>
+    <!-- The <body> element contains the visible page content. -->
     <header class="header">
+        <!-- The <header> element represents a container for introductory content or a set of navigational links. -->
         <div class="header__left">
+            <!-- This <div> is a container for the left section of the header. -->
             <img src="assets/menu.svg" alt="Menu" class="header__icon">
-            <img src="assets/youtube.svg" alt="YouTube Logo" class="header__logo">
+            <!-- The <img> tag is used to embed an image in an HTML page. "src" specifies the path to the image, and "alt" provides an alternate text for the image, which is useful for accessibility. -->
+            <img src="assets/icone YouTube.png" alt="YouTube Logo" class="header__logo">
         </div>
         <div class="header__center">
+            <!-- This <div> is a container for the center section of the header, which contains the search bar. -->
             <input type="text" class="header__search-bar" placeholder="Pesquisar">
+            <!-- The <input type="text"> element defines a one-line text input field. The "placeholder" attribute provides a hint to the user of what can be entered in the field. -->
             <button class="header__search-button">
+                <!-- The <button> element defines a clickable button. -->
                 <img src="assets/search.svg" alt="Search" class="header__icon">
             </button>
         </div>
         <div class="header__right">
+            <!-- This <div> is a container for the right section of the header. -->
             <img src="assets/video.svg" alt="Create" class="header__icon">
             <img src="assets/bell.svg" alt="Notifications" class="header__icon">
             <img src="assets/avatar.svg" alt="Avatar" class="header__icon--avatar">
         </div>
     </header>
     <div class="main-container">
+        <!-- This <div> is a container for the main content of the page, including the video section and the sidebar. -->
         <main class="video-section">
+            <!-- The <main> element specifies the main content of a document. -->
             <div class="video-player">
+                <!-- This <div> is a container for the video player. -->
                 <img src="assets/thumb main.png" alt="Video Thumbnail" style="width: 100%;">
+                <!-- This is the main video thumbnail. The "style" attribute is used for inline styling. -->
             </div>
             <h1 class="video-section__title">Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h1>
+            <!-- The <h1> element defines a level 1 heading. This is the title of the video. -->
             <div class="video-section__actions">
+                <!-- This <div> contains the channel information and action buttons. -->
                 <div class="video-section__channel">
-                    <img src="https://via.placeholder.com/42x42" alt="Channel Avatar" class="video-section__channel-avatar">
+                    <!-- This <div> contains the channel avatar and name. -->
+                    <img src="assets/chanel avatar.jpg" alt="Channel Avatar" class="video-section__channel-avatar">
                     <div class="video-section__channel-info">
-                        <p class="video-section__channel-name">DigitalInnovationOne</p>
+                        <p class="video-section__channel-name">DIO</p>
+                        <!-- The <p> element defines a paragraph. -->
                         <p class="video-section__channel-subscribers">83,3 mil inscritos</p>
                     </div>
                     <button class="video-section__subscribe-button">Inscreva-se</button>
                 </div>
                 <div class="video-section__buttons">
+                    <!-- This <div> contains the like, dislike, share, and download buttons. -->
                     <button class="video-section__button">
                         <img src="assets/thumbs-up.svg" alt="Like">
                         <span>2 mil</span>
+                        <!-- The <span> element is an inline container used to mark up a part of a text, or a part of a document. -->
                     </button>
                     <button class="video-section__button">
                         <img src="assets/thumbs-down.svg" alt="Dislike">
@@ -60,6 +90,7 @@
                 </div>
             </div>
             <div class="video-section__details">
+                <!-- This <div> contains the video details, such as views and description. -->
                 <p class="video-section__views">28.418 visualizações Transmitido ao vivo em 23 ago. de 2022</p>
                 <div class="video-section__description">
                     <p>Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.</p>
@@ -67,10 +98,13 @@
             </div>
         </main>
         <aside id="sidebar">
+            <!-- The <aside> element defines some content aside from the content it is placed in (like a sidebar). -->
+            <!-- The following "video-item" divs are for the recommended videos in the sidebar. -->
             <div class="video-item">
                 <img src="assets/thumb 1.png" alt="Video Thumbnail" class="thumbnail">
                 <div class="video-info">
                     <h3 class="video-title">Geração Tech Unimed - BH - Ciência de Dados</h3>
+                    <!-- The <h3> element defines a level 3 heading. -->
                     <p class="video-channel">DigitalInnovationOne</p>
                     <p class="video-views">2,1 mil visualizações Transmitido há 2 dias</p>
                 </div>
